@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Guidance01ViewController" customModule="UESTCDJ" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NaQ-Np-xzv" userLabel="skip">
+                    <rect key="frame" x="347" y="84" width="31" height="30"/>
+                    <state key="normal" title="跳过">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="权限申请" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJn-60-lNh">
+                    <rect key="frame" x="16" y="134" width="97.5" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DJI GO 将使用以下权限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GY-xr-Isy">
+                    <rect key="frame" x="16" y="179" width="161" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相册权限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gva-dL-g5U">
+                    <rect key="frame" x="16" y="227" width="62" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位置权限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfr-gT-boc">
+                    <rect key="frame" x="16" y="275" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="library_import_action_sheet_photo" translatesAutoresizingMaskIntoConstraints="NO" id="IJ1-vG-WzS">
+                    <rect key="frame" x="374" y="224" width="24" height="24"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_gs_btn_disable" translatesAutoresizingMaskIntoConstraints="NO" id="hc6-9H-nZn">
+                    <rect key="frame" x="371" y="228" width="30" height="112"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="4vJ-lk-eFW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="以上权限都涉及功能的正常使用，建议您全部开启，以防对您造成不便。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5c-w8-8AX">
+                    <rect key="frame" x="16" y="323" width="362" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2s-LD-BVX">
+                    <rect key="frame" x="0.0" y="826" width="414" height="70"/>
+                    <color key="backgroundColor" red="0.37647058823529411" green="0.51764705882352935" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="ag6-De-iXF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="一键设置">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="fastAction:" destination="-1" eventType="touchUpInside" id="SPU-5c-SSs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IJ1-vG-WzS" secondAttribute="trailing" constant="16" id="1Rj-bx-CSu"/>
+                <constraint firstItem="IJ1-vG-WzS" firstAttribute="centerY" secondItem="gva-dL-g5U" secondAttribute="centerY" id="3tC-Mg-Dqs"/>
+                <constraint firstItem="hc6-9H-nZn" firstAttribute="centerY" secondItem="hfr-gT-boc" secondAttribute="centerY" id="4k9-wf-ape"/>
+                <constraint firstItem="K5c-w8-8AX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="6NB-zz-wgc"/>
+                <constraint firstAttribute="bottom" secondItem="r2s-LD-BVX" secondAttribute="bottom" id="ARM-cj-76F"/>
+                <constraint firstItem="oJn-60-lNh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="90" id="AaY-ig-AaB"/>
+                <constraint firstItem="r2s-LD-BVX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EKD-BI-k97"/>
+                <constraint firstItem="hfr-gT-boc" firstAttribute="top" secondItem="gva-dL-g5U" secondAttribute="bottom" constant="30" id="G5D-h5-oQs"/>
+                <constraint firstItem="1GY-xr-Isy" firstAttribute="top" secondItem="oJn-60-lNh" secondAttribute="bottom" constant="16" id="GVI-ZO-3jJ"/>
+                <constraint firstItem="gva-dL-g5U" firstAttribute="top" secondItem="1GY-xr-Isy" secondAttribute="bottom" constant="30" id="MsE-2D-20M"/>
+                <constraint firstItem="r2s-LD-BVX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="QFg-Fc-rGk"/>
+                <constraint firstItem="1GY-xr-Isy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Z1x-Pw-xQe"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K5c-w8-8AX" secondAttribute="trailing" constant="36" id="gKd-uX-Dok"/>
+                <constraint firstItem="hc6-9H-nZn" firstAttribute="centerX" secondItem="IJ1-vG-WzS" secondAttribute="centerX" id="mgj-G6-PyZ"/>
+                <constraint firstItem="K5c-w8-8AX" firstAttribute="top" secondItem="hfr-gT-boc" secondAttribute="bottom" constant="30" id="nCa-Gy-mJf"/>
+                <constraint firstItem="hfr-gT-boc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oeG-D0-SqF"/>
+                <constraint firstItem="oJn-60-lNh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="pG8-t4-xQc"/>
+                <constraint firstItem="NaQ-Np-xzv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="sOy-hW-DKe"/>
+                <constraint firstItem="gva-dL-g5U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uAj-B9-AjQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NaQ-Np-xzv" secondAttribute="trailing" constant="36" id="xq2-ld-jOq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="library_import_action_sheet_photo" width="24" height="24"/>
+        <image name="main_gs_btn_disable" width="112" height="112"/>
+    </resources>
+</document>

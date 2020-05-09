@@ -1,0 +1,58 @@
+{
+    "status": 200,
+    "data": {
+        "total": 2,
+        "rows": [
+            {
+                "videoURL": "http://ivi.bupt.edu.cn/hls/cctv5phd.m3u8",
+                "hash": "lnHdafF4l4IkiWYxERfSN9qlX6C4",
+                "fsize": 8841876,
+                "putTime": 15208361307083078,
+                "mimeType": "video/mp4",
+                "type": 0,
+                "endUser": "刘宽新",
+                "headerImg": "avatar_large_zero"
+            },
+            {
+                "videoURL": "http://demo-videos.qnsdk.com/movies/apple.mp4",
+                "hash": "lqm68Y4DEObT8AmAwBVUEsNxPoCQ",
+                "fsize": 44593355,
+                "putTime": 15211044265892430,
+                "mimeType": "video/mp4",
+                "type": 0,
+                "endUser": "丝丝入扣",
+                "headerImg": "avatar_large_zero"
+            },
+            {
+                "videoURL": "http://demo-videos.qnsdk.com/movies/blur.mp4",
+                "hash": "lv4IaG2JFOK3xsjgklVbMWZ5Zt-k",
+                "fsize": 17816019,
+                "putTime": 15445021458197322,
+                "mimeType": "video/mp4",
+                "type": 0,
+                "endUser": "Javk",
+                "headerImg": "avatar_large_zero"
+            },
+            {
+                "videoURL": "http://demo-videos.qnsdk.com/movies/moon.mp4",
+                "hash": "FgE-32EHUutBp6_2ztW2VQ8gyqPY",
+                "fsize": 2666497,
+                "putTime": 15208336261261425,
+                "mimeType": "video/mp4",
+                "type": 0,
+                "endUser": "Tim",
+                "headerImg": "avatar_large_zero"
+            },
+            {
+                "videoURL": "http://demo-videos.qnsdk.com/movies/qiniu.mp4",
+                "hash": "lhsawSRA9-0L8b0s-cXmojaMhGqn",
+                "fsize": 25538648,
+                "putTime": 15203474482177600,
+                "mimeType": "video/mp4",
+                "type": 0,
+                "endUser": "LoanS",
+                "headerImg": "avatar_large_zero"
+            }
+        ]
+    }
+}
