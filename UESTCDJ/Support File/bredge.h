@@ -11,5 +11,6 @@
 #import "XHLaunchAd.h"
 #import "UIButton+Animate.h"
 #import "NSObject+Auth.h"
+#import "GCDAsyncSocket.h"
 
 #endif /* bredge_h */

@@ -32,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
         confVideoLaunch()
+        configSocket()
         return true
     }
     
@@ -50,6 +51,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+// MARK: 配置 socket
+extension AppDelegate {
+    private func configSocket() {
+        SocketManager.shared.initialSocket()
+    }
 }
 
 // MARK: 配置 TabBar

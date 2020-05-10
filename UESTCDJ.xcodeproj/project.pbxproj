@@ -46,6 +46,16 @@
 		5896194E2449C40D00B2C31B /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5896194C2449C40D00B2C31B /* ControlViewController.swift */; };
 		5896194F2449C40D00B2C31B /* ControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5896194D2449C40D00B2C31B /* ControlViewController.xib */; };
 		589619512449CFEF00B2C31B /* img.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589619502449CFEF00B2C31B /* img.swift */; };
+		58B616D82467A52000F96364 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B616D72467A52000F96364 /* SocketManager.swift */; };
+		58B616EE2467A57A00F96364 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B616DB2467A57A00F96364 /* DDTTYLogger.m */; };
+		58B616EF2467A57A00F96364 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B616DE2467A57A00F96364 /* DDASLLogger.m */; };
+		58B616F02467A57A00F96364 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B616E32467A57A00F96364 /* ContextFilterLogFormatter.m */; };
+		58B616F12467A57A00F96364 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B616E42467A57A00F96364 /* DispatchQueueLogFormatter.m */; };
+		58B616F22467A57A00F96364 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 58B616E52467A57A00F96364 /* README.txt */; };
+		58B616F32467A57A00F96364 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B616E62467A57A00F96364 /* DDLog.m */; };
+		58B616F42467A57A00F96364 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B616E82467A57A00F96364 /* DDAbstractDatabaseLogger.m */; };
+		58B616F52467A57A00F96364 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B616E92467A57A00F96364 /* DDFileLogger.m */; };
+		58B616F62467A57A00F96364 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B616EC2467A57A00F96364 /* GCDAsyncSocket.m */; };
 		58DA1BFA2448C4E40067C8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA1BF92448C4E40067C8FF /* AppDelegate.swift */; };
 		58DA1BFE2448C4E40067C8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DA1BFD2448C4E40067C8FF /* ViewController.swift */; };
 		58DA1C032448C4E50067C8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58DA1C022448C4E50067C8FF /* Assets.xcassets */; };
@@ -151,6 +161,24 @@
 		5896194C2449C40D00B2C31B /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
 		5896194D2449C40D00B2C31B /* ControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlViewController.xib; sourceTree = "<group>"; };
 		589619502449CFEF00B2C31B /* img.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = img.swift; sourceTree = "<group>"; };
+		58B616D72467A52000F96364 /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		58B616DB2467A57A00F96364 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		58B616DC2467A57A00F96364 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		58B616DD2467A57A00F96364 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		58B616DE2467A57A00F96364 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		58B616DF2467A57A00F96364 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		58B616E12467A57A00F96364 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		58B616E22467A57A00F96364 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		58B616E32467A57A00F96364 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		58B616E42467A57A00F96364 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		58B616E52467A57A00F96364 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		58B616E62467A57A00F96364 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		58B616E72467A57A00F96364 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		58B616E82467A57A00F96364 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		58B616E92467A57A00F96364 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		58B616EA2467A57A00F96364 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		58B616EC2467A57A00F96364 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		58B616ED2467A57A00F96364 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
 		58DA1BF62448C4E40067C8FF /* UESTCDJ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UESTCDJ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58DA1BF92448C4E40067C8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58DA1BFD2448C4E40067C8FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -339,6 +367,54 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		58B616D92467A57A00F96364 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				58B616DA2467A57A00F96364 /* CocoaLumberjack */,
+				58B616EB2467A57A00F96364 /* CocoaAsyncSocket */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		58B616DA2467A57A00F96364 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				58B616DB2467A57A00F96364 /* DDTTYLogger.m */,
+				58B616DC2467A57A00F96364 /* DDLog.h */,
+				58B616DD2467A57A00F96364 /* DDAbstractDatabaseLogger.h */,
+				58B616DE2467A57A00F96364 /* DDASLLogger.m */,
+				58B616DF2467A57A00F96364 /* DDFileLogger.h */,
+				58B616E02467A57A00F96364 /* Extensions */,
+				58B616E62467A57A00F96364 /* DDLog.m */,
+				58B616E72467A57A00F96364 /* DDTTYLogger.h */,
+				58B616E82467A57A00F96364 /* DDAbstractDatabaseLogger.m */,
+				58B616E92467A57A00F96364 /* DDFileLogger.m */,
+				58B616EA2467A57A00F96364 /* DDASLLogger.h */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		58B616E02467A57A00F96364 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58B616E12467A57A00F96364 /* ContextFilterLogFormatter.h */,
+				58B616E22467A57A00F96364 /* DispatchQueueLogFormatter.h */,
+				58B616E32467A57A00F96364 /* ContextFilterLogFormatter.m */,
+				58B616E42467A57A00F96364 /* DispatchQueueLogFormatter.m */,
+				58B616E52467A57A00F96364 /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		58B616EB2467A57A00F96364 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				58B616EC2467A57A00F96364 /* GCDAsyncSocket.m */,
+				58B616ED2467A57A00F96364 /* GCDAsyncSocket.h */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
 		58DA1BED2448C4E40067C8FF = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +452,7 @@
 		58DA1C0D244978FF0067C8FF /* Support File */ = {
 			isa = PBXGroup;
 			children = (
+				58B616D92467A57A00F96364 /* Library */,
 				581978FE24668198005D6359 /* Video.json */,
 				589619312449B4F400B2C31B /* FSPageView */,
 				58DA1C3B24497F310067C8FF /* XHLaunchAd */,
@@ -515,6 +592,7 @@
 			children = (
 				58DA1C8A244984FA0067C8FF /* UserManager.swift */,
 				58DA1C8B244984FA0067C8FF /* AppConf.swift */,
+				58B616D72467A52000F96364 /* SocketManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -648,6 +726,7 @@
 				5896192B2449AFCF00B2C31B /* ShareViewController.xib in Resources */,
 				589619202449AF6700B2C31B /* EquipmentViewController.xib in Resources */,
 				58DA1CF5244984FA0067C8FF /* matching_12.gif in Resources */,
+				58B616F22467A57A00F96364 /* README.txt in Resources */,
 				58DA1CF924499C800067C8FF /* Main.storyboard in Resources */,
 				589619302449AFE000B2C31B /* MeViewController.xib in Resources */,
 				5896194B2449C05300B2C31B /* KnowMoreViewController.xib in Resources */,
@@ -705,7 +784,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B616F32467A57A00F96364 /* DDLog.m in Sources */,
 				589619462449BF2000B2C31B /* IntroductionViewController.swift in Sources */,
+				58B616EE2467A57A00F96364 /* DDTTYLogger.m in Sources */,
 				581978F32466805E005D6359 /* MediaTableViewCell.swift in Sources */,
 				58DA1CD2244984FA0067C8FF /* AppConf.swift in Sources */,
 				58DA1CB7244984FA0067C8FF /* BaseTabBarController.swift in Sources */,
@@ -713,11 +794,13 @@
 				589619412449B50100B2C31B /* FSPageControl.swift in Sources */,
 				58DA1CBD244984FA0067C8FF /* Colors.swift in Sources */,
 				58DA1C6124497F310067C8FF /* XHLaunchAdDownloader.m in Sources */,
+				58B616F02467A57A00F96364 /* ContextFilterLogFormatter.m in Sources */,
 				58DA1CD0244984FA0067C8FF /* UITextField+Extensions.swift in Sources */,
 				5896193F2449B50100B2C31B /* FSPagerViewLayoutAttributes.swift in Sources */,
 				58DA1C5B24497F310067C8FF /* XHLaunchAdView.m in Sources */,
 				58DA1C6424497F310067C8FF /* XHLaunchAdCache.m in Sources */,
 				58DA1CC2244984FA0067C8FF /* UISegmentedControl+Extensions.swift in Sources */,
+				58B616EF2467A57A00F96364 /* DDASLLogger.m in Sources */,
 				58DA1BFE2448C4E40067C8FF /* ViewController.swift in Sources */,
 				581978FA246680AA005D6359 /* UIButton+Animate.m in Sources */,
 				58DA1CC8244984FA0067C8FF /* UITableView+Identifiable.swift in Sources */,
@@ -734,6 +817,7 @@
 				58DA1C6224497F310067C8FF /* XHLaunchAdImageView+XHLaunchAdCache.m in Sources */,
 				58DA1CCB244984FA0067C8FF /* UIImage+Extensions.swift in Sources */,
 				581979082466BCF1005D6359 /* ControlInfo1View.swift in Sources */,
+				58B616F52467A57A00F96364 /* DDFileLogger.m in Sources */,
 				58DA1CEE244984FA0067C8FF /* SpaceView.swift in Sources */,
 				58DA1C5E24497F310067C8FF /* XHLaunchAdConst.m in Sources */,
 				5819790A2466BCFA005D6359 /* ControlInfo3View.swift in Sources */,
@@ -750,7 +834,9 @@
 				58DA1C5D24497F310067C8FF /* XHLaunchImageView.m in Sources */,
 				58DA1C5924497F310067C8FF /* FLAnimatedImage.m in Sources */,
 				58DA1C5A24497F310067C8FF /* FLAnimatedImageView.m in Sources */,
+				58B616F42467A57A00F96364 /* DDAbstractDatabaseLogger.m in Sources */,
 				58DA1C6324497F310067C8FF /* XHLaunchAdConfiguration.m in Sources */,
+				58B616D82467A52000F96364 /* SocketManager.swift in Sources */,
 				58DA1CBA244984FA0067C8FF /* XDDateFormatter.swift in Sources */,
 				589619402449B50100B2C31B /* FSPageViewLayout.swift in Sources */,
 				58DA1CF0244984FA0067C8FF /* EditView.swift in Sources */,
@@ -758,6 +844,7 @@
 				58DA1CCC244984FA0067C8FF /* Optional+Extensions.swift in Sources */,
 				58DA1CCD244984FA0067C8FF /* MBProgressHUD+Extensions.swift in Sources */,
 				58DA1D062449A7320067C8FF /* Guidance02ViewController.swift in Sources */,
+				58B616F12467A57A00F96364 /* DispatchQueueLogFormatter.m in Sources */,
 				5896194E2449C40D00B2C31B /* ControlViewController.swift in Sources */,
 				581979062466BCE5005D6359 /* ControlInfo0View.swift in Sources */,
 				58DA1CBB244984FA0067C8FF /* Fonts.swift in Sources */,
@@ -772,6 +859,7 @@
 				58DA1CF2244984FA0067C8FF /* BaseButton.swift in Sources */,
 				58DA1C6524497F310067C8FF /* XHLaunchAdImageManager.m in Sources */,
 				58DA1CBE244984FA0067C8FF /* BaseNavigationViewController.swift in Sources */,
+				58B616F62467A57A00F96364 /* GCDAsyncSocket.m in Sources */,
 				58DA1C5C24497F310067C8FF /* XHLaunchAdButton.m in Sources */,
 				589619512449CFEF00B2C31B /* img.swift in Sources */,
 				58DA1CC7244984FA0067C8FF /* UICollectionView+Identifiable.swift in Sources */,
