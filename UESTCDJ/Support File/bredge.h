@@ -12,5 +12,6 @@
 #import "UIButton+Animate.h"
 #import "NSObject+Auth.h"
 #import "GCDAsyncSocket.h"
+#import "TransObjc.h"
 
 #endif /* bredge_h */

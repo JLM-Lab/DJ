@@ -11,7 +11,10 @@ import Foundation
 class SocketManager {
     
     private var listenSocket: GCDAsyncSocket!
+    private var connectSocket: GCDAsyncSocket!
     private let port: UInt16 = 2345
+    
+    private var buffer = NSMutableData()
     
     
     static let shared = SocketManager()
@@ -34,6 +37,8 @@ class SocketManager {
 extension SocketManager: GCDAsyncSocketDelegate {
     func socket(_ sock: GCDAsyncSocket!, didRead data: Data!, withTag tag: Int) {
         print("收到消息")
+        connectSocket.readData(withTimeout: -1, tag: 0)
+        TransObjc.shareTool().tran(data, buffer)
     }
     
     func socket(_ sock: GCDAsyncSocket!, didConnectToHost host: String!, port: UInt16) {
@@ -42,6 +47,8 @@ extension SocketManager: GCDAsyncSocketDelegate {
     
     func socket(_ sock: GCDAsyncSocket!, didAcceptNewSocket newSocket: GCDAsyncSocket!) {
         print("didAcceptNewSocket")
+        connectSocket = newSocket;
+        newSocket.readData(withTimeout: -1, tag: 0)
     }
     
     

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		261527D674070B400978694C /* Pods_UESTCDJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2731D9C423F6E6D65A60F9EC /* Pods_UESTCDJ.framework */; };
+		581542B5248B8DB3005393DD /* TransObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 581542B4248B8DB3005393DD /* TransObjc.m */; };
 		581978F12466804D005D6359 /* VideoLIstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581978F02466804D005D6359 /* VideoLIstViewController.swift */; };
 		581978F32466805E005D6359 /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581978F22466805E005D6359 /* MediaTableViewCell.swift */; };
 		581978F624668089005D6359 /* PLMediaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581978F424668089005D6359 /* PLMediaInfo.swift */; };
@@ -120,6 +121,8 @@
 /* Begin PBXFileReference section */
 		0FA9B8B41765C22C6AE95138 /* Pods-UESTCDJ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UESTCDJ.debug.xcconfig"; path = "Target Support Files/Pods-UESTCDJ/Pods-UESTCDJ.debug.xcconfig"; sourceTree = "<group>"; };
 		2731D9C423F6E6D65A60F9EC /* Pods_UESTCDJ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UESTCDJ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		581542B3248B8DB3005393DD /* TransObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransObjc.h; sourceTree = "<group>"; };
+		581542B4248B8DB3005393DD /* TransObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransObjc.m; sourceTree = "<group>"; };
 		581978F02466804D005D6359 /* VideoLIstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLIstViewController.swift; sourceTree = "<group>"; };
 		581978F22466805E005D6359 /* MediaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
 		581978F424668089005D6359 /* PLMediaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PLMediaInfo.swift; sourceTree = "<group>"; };
@@ -593,6 +596,8 @@
 				58DA1C8A244984FA0067C8FF /* UserManager.swift */,
 				58DA1C8B244984FA0067C8FF /* AppConf.swift */,
 				58B616D72467A52000F96364 /* SocketManager.swift */,
+				581542B3248B8DB3005393DD /* TransObjc.h */,
+				581542B4248B8DB3005393DD /* TransObjc.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -860,6 +865,7 @@
 				58DA1C6524497F310067C8FF /* XHLaunchAdImageManager.m in Sources */,
 				58DA1CBE244984FA0067C8FF /* BaseNavigationViewController.swift in Sources */,
 				58B616F62467A57A00F96364 /* GCDAsyncSocket.m in Sources */,
+				581542B5248B8DB3005393DD /* TransObjc.m in Sources */,
 				58DA1C5C24497F310067C8FF /* XHLaunchAdButton.m in Sources */,
 				589619512449CFEF00B2C31B /* img.swift in Sources */,
 				58DA1CC7244984FA0067C8FF /* UICollectionView+Identifiable.swift in Sources */,
@@ -1017,7 +1023,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ccwcar.UESTCDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jlm/Code/UESTCDJ/UESTCDJ/Support File/bredge.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jlm/Code/DJ/UESTCDJ/Support File/bredge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1038,7 +1044,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ccwcar.UESTCDJ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jlm/Code/UESTCDJ/UESTCDJ/Support File/bredge.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jlm/Code/DJ/UESTCDJ/Support File/bredge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

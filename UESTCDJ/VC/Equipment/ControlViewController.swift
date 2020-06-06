@@ -28,6 +28,9 @@ class ControlViewController: BaseViewController {
     /// 控制弹窗
     private var controlShow = false
     private var controlView: FlyControlView!
+    
+    /// 页面
+    private var layerView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,16 @@ class ControlViewController: BaseViewController {
             setRotation(true)
         }
         configUI()
+        NotificationCenter.default.addObserver(self, selector: #selector(receiveInfo(info:)), name: NSNotification.Name.init(rawValue: "postImage"), object: nil)
         
+    }
+    
+    @objc private func receiveInfo(info: Notification) {
+        guard let info = info.object as? Data else {
+            print("数据转化失败")
+            return
+        }
+        layerView.image = UIImage.init(data: info as Data)
     }
 
 
@@ -61,15 +73,18 @@ class ControlViewController: BaseViewController {
 
 extension ControlViewController {
     private func configUI() {
-        let layerView = UIView(frame: CGRect(x: 0, y: 0, width: Z_SCREEN_HEIGHT, height: Z_SCREEN_WIDTH))
+        layerView = UIImageView()
+        layerView.backgroundColor = .black
+        layerView.contentMode = .scaleAspectFit
+        layerView.frame = CGRect(x: 0, y: 0, width: Z_SCREEN_HEIGHT, height: Z_SCREEN_WIDTH)
         view.insertSubview(layerView, at: 0)
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = layerView.bounds
-        gradientLayer.colors = [UIColor.ccw.hex(0x000000).cgColor, UIColor(displayP3Red: 66.0 / 255.0, green: 66.0 / 255.0, blue: 66.0 / 255.0, alpha: 1.0).cgColor, UIColor.ccw.hex(0x000000).cgColor]
-        gradientLayer.locations = [0.0, 0.8, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
-        layerView.layer.insertSublayer(gradientLayer, at: 0)
+//        let gradientLayer = CAGradientLayer()
+//        gradientLayer.frame = layerView.bounds
+//        gradientLayer.colors = [UIColor.ccw.hex(0x000000).cgColor, UIColor(displayP3Red: 66.0 / 255.0, green: 66.0 / 255.0, blue: 66.0 / 255.0, alpha: 1.0).cgColor, UIColor.ccw.hex(0x000000).cgColor]
+//        gradientLayer.locations = [0.0, 0.8, 1.0]
+//        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+//        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+//        layerView.layer.insertSublayer(gradientLayer, at: 0)
         
         topStatusView = UIView()
         view.addSubview(topStatusView)
